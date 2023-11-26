@@ -1,0 +1,110 @@
+name: Upload realease slidev pdf and deploying static content to GitHub Pages
+on:
+  # dispatch from tagpr.yml workflow
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: false
+        default: 'v.0.0.0'
+        description: 'Specify release tag'
+jobs:
+  upload-slidev-job:
+    name: Export slidev pdf and upload release assets and deploying static content to GitHub Pages job.
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    permissions:
+      contents: write # Upload Release assets
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Install Google Fonts
+        run: |
+          sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
+      - run: npm i -D playwright-chromium
+      - name: Inject meta tags and/or scripts to the main index.html
+        env: 
+          ga_tracking_id: ${{ secrets.GA_TRACKING_ID }}
+        if: ${{ env.ga_tracking_id != '' }}
+        run: |
+          TITLE=$(awk '/^---$/ {f=1;next} f && /^title:/ {print $2;exit}' slides.md)
+          DESCRIPTION=$(awk '/^info:/ {f=1;next} f && /^$/ {exit} f {print}' slides.md)
+          cat <<EOF > index.html
+          <head>
+          <meta property="og:url" content="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="${TITLE}" />
+          <meta property="og:description" content="${DESCRIPTION}" />
+          <meta property="og:site_name" content="${{ github.repository_owner }}.github.io" />
+          <meta property="og:image" content="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/thumbnail/001.png" />
+          <link rel="canonical" href="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" />
+          </head>
+          <body>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=${{ secrets.GA_TRACKING_ID }}"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', '${{ secrets.GA_TRACKING_ID }}');
+            </script>
+          </body>
+          EOF
+      - name: Specify download URL
+        run: |
+          sed -i '2i download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.inputs.tag }}/slides-export.pdf' slides.md
+      - run: make publish
+      - name: Upload Release Asset
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const release = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: context.payload.inputs.tag
+            });
+            const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), 'slides-export.pdf');
+            const fileContent = fs.readFileSync(filePath);
+            await github.rest.repos.uploadReleaseAsset({
+              url: release.data.upload_url,
+              headers: {
+                'content-type': 'application/octet-stream',
+                'content-length': fileContent.length,
+              },
+              name: 'slides-export.pdf',
+              data: fileContent,
+            });
+            const noteFilePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), 'slides-export-notes.pdf');
+            const noteFileContent = fs.readFileSync(noteFilePath);
+            await github.rest.repos.uploadReleaseAsset({
+              url: release.data.upload_url,
+              headers: {
+                'content-type': 'application/octet-stream',
+                'content-length': noteFileContent.length,
+              },
+              name: 'slides-export-notes.pdf',
+              data: noteFileContent,
+            });
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: './docs/.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

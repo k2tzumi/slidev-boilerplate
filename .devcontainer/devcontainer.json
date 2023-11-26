@@ -1,0 +1,39 @@
+{
+  "name": "sli.dev",
+  "image": "mcr.microsoft.com/playwright:v1.40.0-jammy",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "",
+  "postCreateCommand": "sh .devcontainer/post-create.sh",
+  "postStartCommand": "make dev",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "slides.md"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "antfu.slidev",
+        "Vue.volar",
+        "ms-vscode-remote.remote-containers",
+        "GitHub.codespaces"
+      ]
+    }
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/node/workspace,type=bind",
+  "workspaceFolder": "/home/node/workspace",
+  "portsAttributes": {
+    "3030": {
+      "label": "Slidev",
+      "protocol": "http",
+      "onAutoForward": "openPreview",
+      "requireLocalPort": true
+    }
+  },
+  "forwardPorts": [
+    3030
+  ]
+}
