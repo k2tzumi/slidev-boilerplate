@@ -14,11 +14,14 @@ drawings:
 transition: slide-left
 title: Welcome to Slidev
 mdc: true
+addons:
+  - "@katzumi/slidev-addon-qrcode"
+  - "slidev-addon-components"
 ---
 
 # Welcome to Slidev
 
-Presentation slides for developers
+Presentation slides for developers @ v0.0.1
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -30,7 +33,7 @@ Presentation slides for developers
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
+  <a href="https://github.com/k2tzumi/slidev-boilerplate" target="_blank" alt="GitHub" title="Open in GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
