@@ -12,10 +12,12 @@
     "lint": "textlint slides.md"
   },
   "dependencies": {
+    "@katzumi/slidev-addon-qrcode": "^0.0.13",
     "@slidev/cli": "^0.44.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
-    "slidev-addon-components": "^0.0.1"
+    "slidev-addon-components": "^0.0.1",
+    "slidev-addon-rabbit": "^0.2.0"
   },
   "devDependencies": {
     "@iconify-json/devicon": "^1.1.25",
@@ -38,6 +40,8 @@
   },
   "slidev": {
     "addons": [
+      "slidev-addon-components",
+      "@katzumi/slidev-addon-qrcode",
       "slidev-addon-components"
     ]
   }
