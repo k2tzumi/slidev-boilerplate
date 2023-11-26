@@ -12,7 +12,7 @@ Learn more about Slidev on [documentations](https://sli.dev/).
 
 ## How to publish to GitHub Pages
 
-This repository extends Slidev boilerplate with the following features:
+This repository extends Slidev's Init Project with the following features:
 
 * Installation of several Slidev Addons  
 * Lint and build-time validation  
