@@ -24,14 +24,14 @@ Publishing to GitHub Pages is done via Github Actions, but some repository setti
 
 Please follow the steps below.
 
-1. Enable GitHub Pages    
+1. Enable GitHub Pages [:link:](./settings/pages)    
 Select GitHub Actions as the source  
 After selection, `github-pages` will be added to Environments.
-1. Set `Deployment branches and tags` for `github-pages` in Environments  
+1. Set `Deployment branches and tags` for `github-pages` in Environments [:link:](./settings/environments)  
 Add `tagpr-from-*` to the branch from `Add deployment branch or tag rule`.
-1. Change the permissions of GitHub Actions to enable tagpr execution  
+1. Change the permissions of GitHub Actions to enable tagpr execution [:link:](./settings/actions)  
 Change `Workflow permissions` to `Read and write permissions`, check `Allow GitHub Actions to create and approve pull requests`, and save.
-1. Set the Google tag ID in the Repository secrets of GitHub Actions (optional)  
+1. Set the Google tag ID in the Repository secrets of GitHub Actions (optional) [:link:](./settings/secrets/actions/new)  
 Register a secret named `GA_TRACKING_ID` in `Repository secrets`.  
 
 Publishing to GitHub Pages is linked to the release branch of tagpr when it is merged.  
