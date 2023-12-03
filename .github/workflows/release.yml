@@ -6,7 +6,7 @@ on:
       tag:
         type: string
         required: false
-        default: 'v.0.0.0'
+        default: 'v0.0.0'
         description: 'Specify release tag'
 jobs:
   upload-slidev-job:
@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
       - run: npm i -D playwright-chromium
-      - name: Inject meta tags and/or scripts to the main index.html
+      - name: Inject meta tags and scripts to the main index.html
         env: 
           ga_tracking_id: ${{ secrets.GA_TRACKING_ID }}
         if: ${{ env.ga_tracking_id != '' }}
@@ -60,6 +60,26 @@ jobs:
             </script>
           </body>
           EOF
+      - name: Inject meta tags to the main index.html
+        env: 
+          ga_tracking_id: ${{ secrets.GA_TRACKING_ID }}
+        if: ${{ env.ga_tracking_id == '' }}
+        run: |
+          TITLE=$(awk '/^---$/ {f=1;next} f && /^title:/ {print $2;exit}' slides.md)
+          DESCRIPTION=$(awk '/^info:/ {f=1;next} f && /^$/ {exit} f {print}' slides.md)
+          cat <<EOF > index.html
+          <head>
+          <meta property="og:url" content="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="${TITLE}" />
+          <meta property="og:description" content="${DESCRIPTION}" />
+          <meta property="og:site_name" content="${{ github.repository_owner }}.github.io" />
+          <meta property="og:image" content="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/thumbnail/001.png" />
+          <link rel="canonical" href="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" />
+          </head>
+          <body>
+          </body>
+          EOF  
       - name: Specify download URL
         run: |
           sed -i '2i download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.inputs.tag }}/slides-export.pdf' slides.md
