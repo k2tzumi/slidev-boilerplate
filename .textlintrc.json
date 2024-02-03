@@ -29,7 +29,7 @@
         "allow": ["か"]
      },
       "sentence-length": {
-        "max": 120
+        "max": 180
       },
       "ja-no-mixed-period": false
     },

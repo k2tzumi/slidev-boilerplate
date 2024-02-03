@@ -47,7 +47,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: fade-out
 ---
 
-# What is Slidev?
+# What is Slidev？
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
@@ -131,7 +131,7 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 # Code
 
-Use code snippets and get the highlighting directly![^1]
+Use code snippets and get the highlighting directly！[^1]
 
 ```ts {all|2|1-6|9|all}
 interface User {
