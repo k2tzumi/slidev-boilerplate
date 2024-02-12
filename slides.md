@@ -17,6 +17,7 @@ mdc: true
 addons:
   - "@katzumi/slidev-addon-qrcode"
   - "slidev-addon-components"
+  - "slidev-addon-rabbit"
 ---
 
 # Welcome to Slidev
