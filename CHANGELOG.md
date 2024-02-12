@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.5](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.0.4...v0.0.5) - 2024-02-12
+- Ease timeout on export by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/11
+
 ## [v0.0.4](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.0.3...v0.0.4) - 2024-02-03
 - Append Codespaces button by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/9
 
