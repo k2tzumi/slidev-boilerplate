@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@katzumi/slidev-addon-qrcode": "^0.0.13",
-    "@slidev/cli": "^0.46.3",
-    "@slidev/theme-default": "^0.24.0",
-    "@slidev/theme-seriph": "^0.24.0",
+    "@slidev/cli": "^0.47.4",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
     "slidev-addon-components": "^0.0.1",
     "slidev-addon-rabbit": "^0.2.0"
   },
@@ -29,11 +29,11 @@
     "@iconify-json/logos": "^1.1.42",
     "@iconify-json/material-symbols": "^1.1.72",
     "@iconify-json/noto": "^1.1.18",
-    "@iconify-json/simple-icons": "^1.1.90",
+    "@iconify-json/simple-icons": "^1.1.91",
     "@iconify-json/skill-icons": "^1.1.7",
     "@iconify-json/twemoji": "^1.1.15",
     "playwright-chromium": "^1.41.2",
-    "textlint": "^13.4.1",
+    "textlint": "^14.0.2",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-preset-ja-spacing": "^2.3.0",
     "textlint-rule-preset-ja-technical-writing": "^10.0.1"
@@ -42,7 +42,8 @@
     "addons": [
       "slidev-addon-components",
       "@katzumi/slidev-addon-qrcode",
-      "slidev-addon-components"
+      "slidev-addon-components",
+      "slidev-addon-rabbit"
     ]
   }
 }
