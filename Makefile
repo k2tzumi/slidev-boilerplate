@@ -52,7 +52,7 @@ lint: .textlintcache
 publish: ## Publish slide
 publish: slides-export.pdf slides-export-notes.pdf
 	npx -p @slidev/cli -c "slidev build --base /$(REPOSITORY) --out docs"
-	npx -p @slidev/cli -c "slidev export --format png --output docs/thumbnail --timeout 60000"
+	npx -p @slidev/cli -c "slidev export --timeout 60000 --format png --output docs/thumbnail"
 
 .PHONY: clean
 clean: ## Delete slide

@@ -1,19 +1,19 @@
 ---
+# try also 'default' to start simple
 theme: seriph
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
-class: text-center
+# apply any unocss classes to the current slide
+class: 'text-center'
+# https://sli.dev/custom/highlighters.html
 highlighter: shiki
-lineNumbers: false
+# some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
-drawings:
-  persist: false
-transition: slide-left
-title: Welcome to Slidev
-mdc: true
 addons:
   - "@katzumi/slidev-addon-qrcode"
   - "slidev-addon-components"
@@ -25,27 +25,19 @@ addons:
 Presentation slides for developers @ v0.0.5
 
 <div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+  <span @click="$slidev.nav.next" class="px-2 p-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
     Press Space for next page <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/k2tzumi/slidev-boilerplate" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+<a href="https://github.com/k2tzumi/slidev-boilerplate" target="_blank" alt="GitHub" title="Open in GitHub" class="abs-br m-6 text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+  <carbon-logo-github />
+</a>
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
----
-transition: fade-out
 ---
 
 # What is Slidev？
@@ -82,25 +74,6 @@ h1 {
 }
 </style>
 
-<!--
-Here is another comment.
--->
-
----
-layout: default
----
-
-# Table of contents
-
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
-
-<Toc maxDepth="1"></Toc>
-
----
-transition: slide-up
-level: 2
 ---
 
 # Navigation
@@ -112,7 +85,7 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 |     |     |
 | --- | --- |
 | <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd>| previous animation or slide |
 | <kbd>up</kbd> | previous slide |
 | <kbd>down</kbd> | next slide |
 
@@ -132,7 +105,9 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 # Code
 
-Use code snippets and get the highlighting directly！[^1]
+Use code snippets and get the highlighting directly！
+
+<!-- https://sli.dev/guide/syntax.html#line-highlighting -->
 
 ```ts {all|2|1-6|9|all}
 interface User {
@@ -150,20 +125,6 @@ function updateUser(id: number, update: User) {
 ```
 
 <arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
 
 ---
 
@@ -197,26 +158,15 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 </div>
 </div>
 
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
-
 ---
 class: px-20
 ---
 
 # Themes
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+Slidev comes with powerful theming support. Themes are able to provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
 
-<div grid="~ cols-2 gap-2" m="-t-2">
+<div grid="~ cols-2 gap-2" m="t-2">
 
 ```yaml
 ---
@@ -329,7 +279,7 @@ LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-$$ {1|3|all}
+$$
 \begin{array}{c}
 
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
@@ -352,9 +302,9 @@ $$
 
 You can create diagrams / graphs from textual descriptions, directly in your Markdown.
 
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
+<div class="grid grid-cols-2 gap-4 pt-4 -mb-6">
 
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
+```mermaid {scale: 0.9}
 sequenceDiagram
     Alice->John: Hello John, how are you?
     Note over Alice,John: A typical interaction
@@ -367,69 +317,9 @@ C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 ```
 
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
 </div>
 
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
 
 ---
 layout: center
@@ -438,4 +328,4 @@ class: text-center
 
 # Learn More
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
