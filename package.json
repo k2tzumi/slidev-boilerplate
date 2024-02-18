@@ -7,13 +7,13 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev",
-    "export": "slidev export --with-clicks --with-toc",
+    "export": "slidev export --timeout 60000 --with-clicks --with-toc",
     "export-notes": "slidev export-notes",
     "lint": "textlint slides.md"
   },
   "dependencies": {
     "@katzumi/slidev-addon-qrcode": "^0.0.13",
-    "@slidev/cli": "^0.47.4",
+    "@slidev/cli": "^0.47.5",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "slidev-addon-components": "^0.0.1",
@@ -33,7 +33,7 @@
     "@iconify-json/skill-icons": "^1.1.7",
     "@iconify-json/twemoji": "^1.1.15",
     "playwright-chromium": "^1.41.2",
-    "textlint": "^14.0.2",
+    "textlint": "^14.0.3",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-preset-ja-spacing": "^2.3.0",
     "textlint-rule-preset-ja-technical-writing": "^10.0.1"
