@@ -1,6 +1,6 @@
 {
   "name": "sli.dev",
-  "image": "mcr.microsoft.com/playwright:v1.40.0-jammy",
+  "image": "mcr.microsoft.com/playwright:v1.41.1-jammy",
   "hostRequirements": {
     "cpus": 2
   },
