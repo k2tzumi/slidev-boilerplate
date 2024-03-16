@@ -22,6 +22,10 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
+addons:
+  - "@katzumi/slidev-addon-qrcode"
+  - "slidev-addon-components"
+  - "slidev-addon-rabbit"
 ---
 
 # Welcome to Slidev
