@@ -52,7 +52,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: fade-out
 ---
 
-# What is Slidev?
+# What is Slidev？
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
@@ -143,7 +143,7 @@ image: https://cover.sli.dev
 
 # Code
 
-Use code snippets and get the highlighting directly, and even types hover![^1]
+Use code snippets and get the highlighting directly, and even types hover！[^1]
 
 ```ts {all|5|7|7-8|10|all} twoslash
 // TwoSlash enables TypeScript hover information
