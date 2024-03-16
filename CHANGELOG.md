@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.0](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.0.5...v0.1.0) - 2024-03-16
+- Bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/13
+- Major update slidev by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/15
+
 ## [v0.0.5](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.0.4...v0.0.5) - 2024-02-12
 - Ease timeout on export by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/11
 
