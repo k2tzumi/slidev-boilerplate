@@ -12,8 +12,8 @@
     "lint": "textlint slides.md"
   },
   "dependencies": {
-    "@katzumi/slidev-addon-qrcode": "^0.0.13",
-    "@slidev/cli": "^0.48.3",
+    "@katzumi/slidev-addon-qrcode": "^0.0.16",
+    "@slidev/cli": "^0.48.7",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "slidev-addon-components": "^0.0.1",
@@ -27,9 +27,9 @@
     "@iconify-json/fxemoji": "^1.1.8",
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/logos": "^1.1.42",
-    "@iconify-json/material-symbols": "^1.1.75",
+    "@iconify-json/material-symbols": "^1.1.76",
     "@iconify-json/noto": "^1.1.18",
-    "@iconify-json/simple-icons": "^1.1.95",
+    "@iconify-json/simple-icons": "^1.1.96",
     "@iconify-json/skill-icons": "^1.1.8",
     "@iconify-json/twemoji": "^1.1.15",
     "playwright-chromium": "^1.42.1",
@@ -42,7 +42,6 @@
     "addons": [
       "slidev-addon-components",
       "@katzumi/slidev-addon-qrcode",
-      "slidev-addon-components",
       "slidev-addon-rabbit"
     ]
   }
