@@ -603,3 +603,7 @@ class: text-center
 # Learn More
 
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+
+<div class="flex justify-center">
+  <QRCode value="https://github.com/k2tzumi/slidev-boilerplate" color="0e0c0d" image="github-mark.svg" />
+</div>
