@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.1.2](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.1...v0.1.2) - 2024-04-12
+- bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/18
+
 ## [v0.1.1](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.0...v0.1.1) - 2024-03-24
 - Fix qr code by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/16
 
