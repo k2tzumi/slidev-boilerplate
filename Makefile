@@ -64,4 +64,11 @@ publish: slides-export.pdf slides-export-notes.pdf
 .PHONY: clean
 clean: ## Delete slide
 clean:
-	rm -rf docs dist slides-export slides-export.pdf slides-export-notes.pdf export-notes
+	rm -rf docs dist slides-export slides-export.pdf slides-export.pptx slides-export-notes.pdf export-notes
+
+.PHONY: init
+init: ## Initialize
+init:
+	npm version v0.0.1 --no-git-tag-version
+	npm install
+	echo "# Changelog" > CHANGELOG.md
