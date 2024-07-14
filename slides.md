@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: https://cover.sli.dev
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -15,9 +15,9 @@ transition: slide-left
 title: Welcome to Slidev
 mdc: true
 addons:
-  - "@katzumi/slidev-addon-qrcode"
-  - "slidev-addon-components"
-  - "slidev-addon-rabbit"
+  - '@katzumi/slidev-addon-qrcode'
+  - slidev-addon-components
+  - slidev-addon-rabbit
 ---
 
 # Welcome to Slidev
