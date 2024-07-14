@@ -14,6 +14,10 @@ build: dist/index.html
 pdf: ## Export PDF
 pdf: slides-export.pdf
 
+.PHONY: ppt
+ppt: ## Export PPT
+ppt: slides-export.pptx
+
 .PHONY: dev
 dev: ## Run dev server
 dev: node_modules
@@ -24,6 +28,9 @@ dist/index.html: node_modules slides.md
 
 slides-export.pdf: node_modules slides.md
 	npm run export
+
+slides-export.pptx: node_modules slides.md
+	npm run export -- --format pptx
 
 slides-export-notes.pdf: node_modules slides.md
 	npm run export-notes
