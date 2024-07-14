@@ -22,7 +22,7 @@ addons:
 
 # Welcome to Slidev
 
-Presentation slides for developers @ v0.1.3
+Presentation slides for developers @ v0.1.4
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
