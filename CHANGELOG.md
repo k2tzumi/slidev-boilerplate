@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.6](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.5...v0.1.6) - 2024-10-31
+- Fix CI warnings by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/27
+- bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/29
+
 ## [v0.1.5](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.4...v0.1.5) - 2024-10-05
 - Add init command by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/24
 - bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/26
