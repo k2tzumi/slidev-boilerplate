@@ -1,5 +1,12 @@
 # Changelog
 
+## [v0.1.6](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.5...v0.1.6) - 2024-11-10
+- Fix CI warnings by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/27
+- bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/29
+- Install dependabot by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/30
+- Bump @iconify-json/simple-icons from 1.2.10 to 1.2.11 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/34
+- Bump actions/configure-pages from 4 to 5 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/31
+
 ## [v0.1.5](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.4...v0.1.5) - 2024-10-05
 - Add init command by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/24
 - bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/26
