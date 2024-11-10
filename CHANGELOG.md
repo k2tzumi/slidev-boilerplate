@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.7](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.6...v0.1.7) - 2024-11-10
+- Bump @iconify-json/material-symbols from 1.2.5 to 1.2.6 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/33
+- Bump actions/deploy-pages from 3 to 4 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/32
+
 ## [v0.1.6](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.5...v0.1.6) - 2024-11-10
 - Fix CI warnings by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/27
 - bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/29
