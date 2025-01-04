@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.1.8](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.7...v0.1.8) - 2025-01-04
+- Bump playwright-chromium from 1.48.2 to 1.49.0 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/38
+- Bump @iconify-json/simple-icons from 1.2.11 to 1.2.13 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/39
+- Bump @iconify-json/material-symbols from 1.2.6 to 1.2.8 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/40
+- Bump @iconify-json/fa6-brands from 1.2.1 to 1.2.3 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/41
+- Bump @iconify-json/devicon from 1.2.4 to 1.2.6 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/42
+- Bump up slidev version 0 50 0 by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/54
+
 ## [v0.1.7](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.6...v0.1.7) - 2024-11-10
 - Bump @iconify-json/material-symbols from 1.2.5 to 1.2.6 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/33
 - Bump actions/deploy-pages from 3 to 4 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/32
