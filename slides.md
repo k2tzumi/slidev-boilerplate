@@ -141,7 +141,7 @@ image: https://cover.sli.dev
 
 # Code
 
-Use code snippets and get the highlighting directly, and even types hover!
+Use code snippets and get the highlighting directly, and even types hover！
 
 ```ts {all|5|7|7-8|10|all} twoslash
 // TwoSlash enables TypeScript hover information
