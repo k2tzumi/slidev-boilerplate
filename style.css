@@ -83,3 +83,38 @@
     font-size: 0.9em;
   }
   
+  .speech-bubble {
+    position: relative;
+    background: #fffacd;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    padding: 15px;
+    color: #ff8c00;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    top: 100%;
+    left: 20px;
+    border-width: 12px 12px 0px;
+    border-style: solid;
+    border-color: #ff8c00 transparent transparent;
+  }
+  
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    top: 100%;
+    left: 20px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #fffacd transparent transparent transparent;
+  }
