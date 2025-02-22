@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.1.9](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.8...v0.1.9) - 2025-02-22
+- Bump playwright-chromium from 1.49.1 to 1.50.1 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/64
+- Bump @iconify-json/material-symbols from 1.2.12 to 1.2.14 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/67
+- Bump @iconify-json/simple-icons from 1.2.18 to 1.2.24 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/69
+- Bump @slidev/cli from 0.50.0 to 51.1.1 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/70
+- Bump @iconify-json/devicon from 1.2.11 to 1.2.15 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/71
+- Add speech-bubble by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/74
+- Bump @slidev/cli from 51.1.1 to 51.2.2 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/73
+
 ## [v0.1.8](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.7...v0.1.8) - 2025-01-04
 - Bump playwright-chromium from 1.48.2 to 1.49.0 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/38
 - Bump @iconify-json/simple-icons from 1.2.11 to 1.2.13 by @dependabot in https://github.com/k2tzumi/slidev-boilerplate/pull/39
