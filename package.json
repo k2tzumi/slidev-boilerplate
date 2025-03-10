@@ -20,7 +20,7 @@
     "slidev-addon-rabbit": "^0.4.0"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.15",
+    "@iconify-json/devicon": "^1.2.19",
     "@iconify-json/emojione": "^1.2.1",
     "@iconify-json/emojione-monotone": "^1.2.1",
     "@iconify-json/fa6-brands": "^1.2.5",
