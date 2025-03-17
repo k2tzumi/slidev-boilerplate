@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@katzumi/slidev-addon-qrcode": "^0.0.17",
-    "@slidev/cli": "^51.2.2",
+    "@slidev/cli": "^51.4.0",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "slidev-addon-components": "^0.0.1",
