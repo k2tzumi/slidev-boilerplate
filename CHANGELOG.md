@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.1.11](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.10...v0.1.11) - 2025-05-17
+- bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/99
+
 ## [v0.1.10](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.9...v0.1.10) - 2025-05-04
 - bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/96
 
