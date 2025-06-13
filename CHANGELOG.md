@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.1.12](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.11...v0.1.12) - 2025-06-13
+- Add copilot instructions by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/102
+
 ## [v0.1.11](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.10...v0.1.11) - 2025-05-17
 - bump up version by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/99
 
