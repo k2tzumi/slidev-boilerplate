@@ -69,6 +69,7 @@ clean:
 .PHONY: init
 init: ## Initialize
 init:
+	npx -y json -I -f package.json -e 'this.name="$(REPOSITORY)"'
 	npm version v0.0.1 --no-git-tag-version
 	npm install
 	echo "# Changelog" > CHANGELOG.md
