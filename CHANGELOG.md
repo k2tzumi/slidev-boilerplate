@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.13](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.12...v0.1.13) - 2025-06-29
+- Add repository initialization workflow and fix name setting by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/105
+- Update dependencies and add OGP image support by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/112
+
 ## [v0.1.12](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.11...v0.1.12) - 2025-06-13
 - Add copilot instructions by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/102
 
