@@ -22,6 +22,7 @@ transition: slide-left
 mdc: true
 addons:
   - '@katzumi/slidev-addon-qrcode'
+  - '@katzumi/slidev-addon-ogp-image'
   - slidev-addon-components
   - slidev-addon-rabbit
 ---
@@ -640,6 +641,12 @@ class: text-center
 <div class="flex justify-center">
 
 <QRCode value="https://github.com/k2tzumi/slidev-boilerplate" color="0e0c0d" image="github-mark.svg" />
+
+</div>
+
+<div class="flex justify-center">
+
+<OgpImage url="https://github.com/k2tzumi/slidev-boilerplate" />
 
 </div>
 
