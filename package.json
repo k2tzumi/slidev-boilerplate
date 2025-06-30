@@ -14,7 +14,7 @@
   "dependencies": {
     "@katzumi/slidev-addon-ogp-image": "^0.0.4",
     "@katzumi/slidev-addon-qrcode": "^0.0.17",
-    "@slidev/cli": "^51.8.2",
+    "@slidev/cli": "^52.0.0",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "slidev-addon-components": "^0.0.1",
