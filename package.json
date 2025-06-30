@@ -34,7 +34,7 @@
     "@iconify-json/skill-icons": "^1.2.0",
     "@iconify-json/twemoji": "^1.2.2",
     "playwright-chromium": "^1.53.1",
-    "textlint": "^15.0.1",
+    "textlint": "^15.1.0",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-preset-ja-spacing": "^2.4.3",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2"
