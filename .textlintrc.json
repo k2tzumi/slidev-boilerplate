@@ -33,6 +33,7 @@
       },
       "ja-no-mixed-period": false
     },
-    "ja-technical-writing/sentence-length": false
+    "ja-technical-writing/sentence-length": false,
+    "@textlint-ja/preset-ai-writing": true
   }
 }
