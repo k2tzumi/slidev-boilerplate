@@ -38,7 +38,7 @@
     "@iconify-json/simple-icons": "^1.2.44",
     "@iconify-json/tabler": "^1.2.20",
     "@textlint-ja/textlint-rule-preset-ai-writing": "^1.6.0",
-    "playwright-chromium": "^1.54.1",
+    "playwright-chromium": "^1.54.2",
     "textlint": "^15.2.1",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-preset-ja-spacing": "^2.4.3",
