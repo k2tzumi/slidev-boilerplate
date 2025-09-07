@@ -1,5 +1,12 @@
 # Changelog
 
+## [v0.1.14](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.13...v0.1.14) - 2025-09-07
+- Bump version and update dependencies by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/121
+- Bump-up-dev-dependencies by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/124
+- Bump version and support immutable releases by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/133
+- chore(deps): bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/127
+- chore(deps): bump actions/upload-pages-artifact from 3 to 4 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/130
+
 ## [v0.1.13](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.12...v0.1.13) - 2025-06-29
 - Add repository initialization workflow and fix name setting by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/105
 - Update dependencies and add OGP image support by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/112
