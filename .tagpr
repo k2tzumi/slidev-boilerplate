@@ -41,3 +41,4 @@
 	releaseBranch = main
 	versionFile = slides.md, package.json
 	command = npm install --package-lock-only
+	release = draft
