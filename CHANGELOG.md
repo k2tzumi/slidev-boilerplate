@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.15](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.14...v0.1.15) - 2025-09-13
+- chore(deps): bump actions/setup-node from 4 to 5 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/134
+- chore(deps): bump actions/github-script from 7 to 8 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/135
+
 ## [v0.1.14](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.13...v0.1.14) - 2025-09-07
 - Bump version and update dependencies by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/121
 - Bump-up-dev-dependencies by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/124
