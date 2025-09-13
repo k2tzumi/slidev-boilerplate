@@ -85,7 +85,7 @@ jobs:
           sed -i '2i download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.inputs.tag }}/slides-export.pdf' slides.md
       - run: make publish
       - name: Upload Release Asset
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
