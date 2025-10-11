@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.2.2](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.2.1...v0.2.2) - 2025-10-11
+- chore: update iconify-json dependencies to latest versions by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/145
+
 ## [v0.2.1](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.2.0...v0.2.1) - 2025-10-11
 - Fix release by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/143
 
