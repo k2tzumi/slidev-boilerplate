@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.2.0](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.15...v0.2.0) - 2025-10-11
+- chore(deps-dev): bump the iconify-json group across 1 directory with 6 updates by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/139
+- chore(deps-dev): bump playwright-chromium from 1.55.0 to 1.55.1 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/140
+- chore(deps): bump @slidev/cli from 52.1.0 to 52.2.5 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/141
+
 ## [v0.1.15](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.1.14...v0.1.15) - 2025-09-13
 - chore(deps): bump actions/setup-node from 4 to 5 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/134
 - chore(deps): bump actions/github-script from 7 to 8 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/135
