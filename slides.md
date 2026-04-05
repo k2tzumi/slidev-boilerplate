@@ -29,7 +29,7 @@ addons:
 
 # Welcome to Slidev
 
-Presentation slides for developers @ v0.2.2
+Presentation slides for developers @ v0.3.0
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
   Press Space for next page <carbon:arrow-right />
