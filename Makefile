@@ -61,6 +61,11 @@ publish: slides-export.pdf slides-export-notes.pdf
 	npx -p @slidev/cli -c "slidev build --base /$(REPOSITORY) --out docs"
 	npx -p @slidev/cli -c "slidev export --timeout 60000 --format png --output docs/thumbnail"
 
+.PHONY: tts
+tts: ## Generate TTS audio files
+tts: node_modules slides.md
+	npx slidev-addon-tts $(if $(wildcard public/tts/*),--force,)
+
 .PHONY: clean
 clean: ## Delete slide
 clean:

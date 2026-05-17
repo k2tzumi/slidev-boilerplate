@@ -83,7 +83,17 @@ jobs:
       - name: Specify download URL
         run: |
           sed -i '2i download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.inputs.tag }}/slides-export.pdf' slides.md
+      - name: Generate TTS audio (AAC + manifest.json)
+        if: ${{ env.VITE_CLOUD_TTS_API_KEY != '' }}
+        env:
+          VITE_CLOUD_TTS_API_KEY: ${{ secrets.CLOUD_TTS_API_KEY }}
+        run: npm run build:tts
+      - name: Enable pre-generated TTS mode for publishing
+        run: |
+          sed -i 's/usePregenerated: false/usePregenerated: true/' example.md
       - run: make publish
+        env:
+          REPOSITORY: ${{ github.event.repository.name }}
       - name: Upload Release Asset
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
