@@ -15,7 +15,7 @@
     "@katzumi/slidev-addon-ogp-image": "^0.0.5",
     "@katzumi/slidev-addon-qrcode": "^0.0.20",
     "@katzumi/slidev-addon-tts": "0.0.15",
-    "@slidev/cli": "^52.15.1",
+    "@slidev/cli": "^52.15.2",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "slidev-addon-components": "^0.0.1",
