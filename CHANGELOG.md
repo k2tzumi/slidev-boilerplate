@@ -1,5 +1,29 @@
 # Changelog
 
+## [v0.3.0](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.2.2...v0.3.0) - 2026-05-17
+- chore(deps): bump @slidev/cli from 52.2.5 to 52.11.1 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/166
+- chore(deps): bump actions/setup-node from 5 to 6 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/148
+- chore(deps-dev): bump textlint from 15.2.2 to 15.5.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/161
+- chore(deps-dev): bump the iconify-json group across 1 directory with 8 updates by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/169
+- chore(deps): bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/158
+- chore(deps-dev): bump playwright-chromium from 1.56.0 to 1.57.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/162
+- chore(deps-dev): bump textlint-filter-rule-comments from 1.2.2 to 1.3.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/168
+- chore(deps): bump actions/deploy-pages from 4 to 5 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/171
+- chore(deps): bump actions/configure-pages from 5 to 6 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/172
+- chore(deps-dev): bump the iconify-json group with 8 updates by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/173
+- chore(deps-dev): bump textlint from 15.5.0 to 15.5.2 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/174
+- Add cooldown configuration for npm updates in dependabot.yml by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/176
+- chore(deps): bump actions/github-script from 8.0.0 to 9.0.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/180
+- chore(deps): bump actions/upload-pages-artifact from 4.0.0 to 5.0.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/181
+- chore(deps-dev): bump playwright-chromium from 1.58.2 to 1.59.1 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/183
+- chore(deps): bump tsuyoshicho/action-textlint from 3.11.1 to 3.11.2 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/184
+- chore(deps): bump Songmu/tagpr from 1.17.1 to 1.18.3 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/185
+- chore(deps): bump actions/setup-node from 6.3.0 to 6.4.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/189
+- chore(deps-dev): bump the iconify-json group across 1 directory with 4 updates by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/190
+- chore(deps-dev): bump textlint from 15.5.2 to 15.6.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/188
+- chore(deps-dev): bump @textlint-ja/textlint-rule-preset-ai-writing from 1.6.1 to 1.6.3 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/187
+- chore(deps-dev): bump the iconify-json group across 1 directory with 4 updates by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/191
+
 ## [v0.2.2](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.2.1...v0.2.2) - 2025-10-11
 - chore: update iconify-json dependencies to latest versions by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/145
 
