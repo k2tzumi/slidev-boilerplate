@@ -23,14 +23,29 @@ jobs:
       contents: write # Upload Release assets
       pages: write
       id-token: write
+    env:
+      VITE_CLOUD_TTS_API_KEY: ${{ secrets.CLOUD_TTS_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: '22'
       - name: Install Google Fonts
         run: |
           sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
       - run: npm i -D playwright-chromium
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@36c6454b5a2348e7794ba2d82a21506605921e3d # v3
+        with:
+          ffmpeg-version: release
+          github-token: ${{ github.token }}
+      - name: Generate TTS audio (AAC + manifest.json)
+        if: ${{ env.VITE_CLOUD_TTS_API_KEY != '' }}
+        run: make tts
+      - name: Enable pre-generated TTS mode for publishing
+        run: |
+          sed -i 's/usePregenerated: false/usePregenerated: true/' slides.md
       - name: Inject meta tags and scripts to the main index.html
         env: 
           ga_tracking_id: ${{ secrets.GA_TRACKING_ID }}
@@ -83,17 +98,7 @@ jobs:
       - name: Specify download URL
         run: |
           sed -i '2i download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.inputs.tag }}/slides-export.pdf' slides.md
-      - name: Generate TTS audio (AAC + manifest.json)
-        if: ${{ env.VITE_CLOUD_TTS_API_KEY != '' }}
-        env:
-          VITE_CLOUD_TTS_API_KEY: ${{ secrets.CLOUD_TTS_API_KEY }}
-        run: npm run build:tts
-      - name: Enable pre-generated TTS mode for publishing
-        run: |
-          sed -i 's/usePregenerated: false/usePregenerated: true/' example.md
       - run: make publish
-        env:
-          REPOSITORY: ${{ github.event.repository.name }}
       - name: Upload Release Asset
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
