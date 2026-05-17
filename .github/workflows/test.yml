@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
       - name: textlint-github-pr-review
-        uses: tsuyoshicho/action-textlint@689c87690ef3b954b5039bcb15589863c9e021a1 # v3.11.1
+        uses: tsuyoshicho/action-textlint@ace6abb4fd6736f30f2319c7e21b7adf4e93dc46 # v3.11.2
         with:
           reporter: github-pr-review
           level: warning
