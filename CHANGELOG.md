@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.3.1](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.3.0...v0.3.1) - 2026-05-17
+- chore: update dependencies and add TTS configuration by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/192
+- chore(deps): bump Songmu/tagpr from 1.18.3 to 1.19.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/194
+
 ## [v0.3.0](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.2.2...v0.3.0) - 2026-05-17
 - chore(deps): bump @slidev/cli from 52.2.5 to 52.11.1 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/166
 - chore(deps): bump actions/setup-node from 5 to 6 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/148
