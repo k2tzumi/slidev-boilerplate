@@ -20,9 +20,16 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+ttsConfig:
+  voiceName: "en-US-Neural2-D"
+  languageCode: "en-US"
+  usePregenerated: false
+  clickBreakTime: "500ms"
+  prefetch: true
 addons:
   - '@katzumi/slidev-addon-qrcode'
   - '@katzumi/slidev-addon-ogp-image'
+  - '@katzumi/slidev-addon-tts'
   - slidev-addon-components
   - slidev-addon-rabbit
 ---
