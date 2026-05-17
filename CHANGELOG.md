@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.3.2](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.3.1...v0.3.2) - 2026-05-17
+- Fix generate tts by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/195
+
 ## [v0.3.1](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.3.0...v0.3.1) - 2026-05-17
 - chore: update dependencies and add TTS configuration by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/192
 - chore(deps): bump Songmu/tagpr from 1.18.3 to 1.19.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/194
