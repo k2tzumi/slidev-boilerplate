@@ -1,6 +1,6 @@
 {
   "name": "slidev-boilerplate",
-  "version": "v0.2.2",
+  "version": "v0.3.0",
   "engines": {
     "node": ">=18.0.0"
   },
