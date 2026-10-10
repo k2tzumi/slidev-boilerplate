@@ -1,5 +1,17 @@
 # Changelog
 
+## [v0.3.3](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.3.2...v0.3.3) - 2026-10-10
+
+- chore(deps-dev): bump @textlint-ja/textlint-rule-preset-ai-writing from 1.6.3 to 1.7.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/199
+- chore(deps): bump actions/checkout from 6.0.2 to 7.0.1 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/209
+- chore(deps): bump Songmu/tagpr from 1.19.0 to 1.21.2 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/212
+- chore(deps): bump actions/setup-node from 6.4.0 to 7.1.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/211
+- chore(deps): bump actions/deploy-pages from 5.0.0 to 5.0.1 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/214
+- chore(deps-dev): bump textlint from 15.6.0 to 15.8.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/213
+- chore(deps-dev): bump the iconify-json group across 1 directory with 8 updates by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/216
+- chore(deps): bump @slidev/cli from 52.15.1 to 53.0.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/215
+- chore(deps-dev): bump playwright-chromium from 1.59.1 to 1.63.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/217
+
 ## [v0.3.2](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.3.1...v0.3.2) - 2026-05-17
 - Fix generate tts by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/195
 
