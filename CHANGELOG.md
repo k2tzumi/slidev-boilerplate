@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.3.4](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.3.3...v0.3.4) - 2026-10-10
+
+- chore: update dependencies in package.json by @k2tzumi in https://github.com/k2tzumi/slidev-boilerplate/pull/219
+
 ## [v0.3.3](https://github.com/k2tzumi/slidev-boilerplate/compare/v0.3.2...v0.3.3) - 2026-10-10
 
 - chore(deps-dev): bump @textlint-ja/textlint-rule-preset-ai-writing from 1.6.3 to 1.7.0 by @dependabot[bot] in https://github.com/k2tzumi/slidev-boilerplate/pull/199
